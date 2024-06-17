@@ -1,0 +1,37 @@
+---
+import FormacionItem from "./FormacionItem.astro"
+const FORMACION = [
+  {
+    date: "Septiembre 2023 - marzo 2024",
+    title: "Bootcamp Full Stack Web Development",
+    company: "Academia CodeSpace (Málaga, España)",
+    description:
+      "Tiempo después de haber finalizado mi contrato de trabajo, decidí realizar este Bootcamp para poder adentrarme en el apasionante mundo de la programación",
+    
+  },
+  {
+    date: "Septiembre 2015 - Septiembre 2019",
+    title: "Máster Interunivesitario en Planificación, Gobernanza y Liderazgo Territorial",
+    company: "Universidad de Málaga, Universidad de Granada y Universidad de Rovira i Virgili",
+    description:
+      "Tras terminar el grado, decidí poder ampliar y complementar mis conocimentos obtenidos durante los cuatro años de estudio en la carrera con este Máster. ",
+  },
+  {
+    date: "Septiembre 2015 - Septiembre 2019",
+    title: "Grado en Geografía y Gestión del Territorio",
+    company: "Universidad de Málaga (España)",
+    description:
+      "Grado universitario que me hizo obtener una visión amplia del territorio en su totalidad, conociendo las características del medio físico y humano.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    FORMACION.map((formacion) => (
+      <li class="">
+        <FormacionItem {...formacion} />
+      </li>
+    ))
+  }
+</ol>
